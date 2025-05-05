@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Fun Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Welcome to Word Fun Playground!</h1>
+
+        <!-- Button with event handling -->
+        <button id="changeColorButton">Change Text Color</button>
+        
+        <!-- Hover effect on text -->
+        <p id="hoverText">Hover over me to change my style!</p>
+
+        <!-- Slideshow of words -->
+        <div class="slideshow">
+            <p id="slideshowText">Word 1</p>
+            <button id="nextWordButton">Next Word</button>
+        </div>
+
+        <!-- Image Gallery with Words -->
+        <div class="image-gallery">
+            <p id="wordImage" class="interactive-word">Hello</p>
+        </div>
+
+        <!-- Modal for showing images -->
+        <div id="imageModal" class="modal">
+            <span id="closeModal" class="close">&times;</span>
+            <img id="modalImage" src="" alt="Image">
+        </div>
+
+        <!-- Form validation -->
+        <form id="userForm">
+            <label for="username">Enter your name: </label>
+            <input type="text" id="username" required>
+            <p id="nameError" class="error-message"></p>
+
+            <label for="email">Enter your email: </label>
+            <input type="email" id="email" required>
+            <p id="emailError" class="error-message"></p>
+
+            <label for="password">Create a password: </label>
+            <input type="password" id="password" required>
+            <p id="passwordError" class="error-message"></p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
